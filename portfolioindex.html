@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ann Shirley Lagramada | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #ffffff;
+      color: #333;
+    }
+
+    header {
+      background: #eeeeee;
+      color: #333;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #cccccc;
+    }
+
+    nav a {
+      color: #333;
+      padding: 1rem;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background: #bbbbbb;
+    }
+
+    .hero {
+      background: #f5f5f5;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .hero h1 {
+      margin-bottom: 1rem;
+    }
+
+    .hero button {
+      background: #d4af37;
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 30px;
+      transition: background 0.3s ease;
+    }
+
+    .hero button:hover {
+      background: #b89420;
+    }
+
+    .portfolio-section {
+      padding: 2rem;
+      background: #f5f5f5;
+      text-align: center;
+    }
+
+    .portfolio-section h2 {
+      margin-bottom: 1rem;
+      color: #4f4f4f;
+    }
+
+    .embed-container {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-top: 56.25%;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      overflow: hidden;
+      margin: 1.5rem 0;
+    }
+
+    .embed-container iframe {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      border: none;
+    }
+
+    .thanks-section {
+      text-align: center;
+      background: #f5f5f5;
+      padding: 2rem;
+      animation: fadeInUp 1.2s ease-in-out;
+      border-top: 1px solid #ddd;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .cute-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .cta-button {
+      background-color: #d4af37;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 30px;
+      font-size: 1rem;
+      margin-top: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: background 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #b89420;
+    }
+
+    footer {
+      background: #eeeeee;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to My Website</h1>
+    <p>I'm Ann Shirley Lagramada — Virtual Assistant & Risk Operations Analyst</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="hero" id="home">
+  <h1>Hello There!</h1>
+  <p>Welcome to my virtual assistant portfolio! I’m Ann Shirley Lagramada — a detail-oriented, reliable, and proactive Virtual Assistant with a background in administrative support and risk operations. I help entrepreneurs, professionals, and small businesses stay organized, productive, and focused by managing tasks like email handling, content creation, scheduling, data entry, and more. Explore my services, see samples of my work, and let’s connect!</p>
+  <button onclick="sayHello()">Click Me</button>
+</div>
+
+  <!-- Canva Portfolio Section -->
+  <section class="portfolio-section" id="portfolio">
+    <h2>My Portfolio</h2>
+    <div class="embed-container">
+      <iframe 
+        src="https://www.canva.com/design/DAGZjFOh9ow/c2F7g8lOfSwjYnzqnT8Kvw/view?embed" 
+        allowfullscreen="allowfullscreen" 
+        loading="lazy">
+      </iframe>
+    </div>
+    <p>
+      <a href="https://www.canva.com/design/DAGZjFOh9ow/c2F7g8lOfSwjYnzqnT8Kvw/view?utm_content=DAGZjFOh9ow&utm_campaign=designshare&utm_medium=embeds&utm_source=link" 
+         target="_blank" rel="noopener">
+        View Full Portfolio on Canva
+      </a>
+    </p>
+  </section>
+
+  <!-- Thanks for Visiting Section -->
+  <section class="thanks-section" id="contact">
+    <div class="cute-icon">🐱‍💻</div>
+    <h2>Thanks for Visiting!</h2>
+    <p>I appreciate your time. Feel free to connect with me through the button below.</p>
+    <a href="https://www.linkedin.com/in/ann-shirley-lagramada-7364b62ab" target="_blank" class="cta-button">Email Me</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ann Shirley Lagramada. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function sayHello() {
+      alert('What are you waiting for? I’m ready to tackle your tasks and lighten your load. I hope you enjoy the ride — looking forward to working with you!');
+    }
+  </script>
+</body>
+</html>
